@@ -43,7 +43,7 @@ macro(autoware_package)
   elseif(${ROS_DISTRO} STREQUAL "humble")
     add_compile_definitions(ROS_DISTRO_HUMBLE)
   elseif(${ROS_DISTRO} STREQUAL "jazzy")
-    add_compile_options(-Wno-error=maybe-uninitialized -Wno-error=array-bounds -Wno-error=unused-parameter -Wno-error=deprecated-declarations -Wno-error=dangling-reference)
+    add_compile_options(-Wno-error=maybe-uninitialized -Wno-error=array-bounds -Wno-error=unused-parameter -Wno-error=deprecated-declarations -Wno-error=dangling-reference -Wno-error=nonnull)
   endif()
 
   # Find dependencies
